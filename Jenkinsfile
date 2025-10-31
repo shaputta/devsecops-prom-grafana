@@ -17,14 +17,7 @@ pipeline {
         '''
       }
     }
-    /*stage('Run Monitoring Stack') {
-      steps {
-        sh '''
-          docker compose -f docker-compose.yml up -d
-          sleep 10
-        '''
-      }
-    }*/
+  
     stage('Run App Container') {
       steps {
         sh '''
